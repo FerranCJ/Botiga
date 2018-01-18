@@ -4,9 +4,9 @@
 public class Producte {
 
     //Declaració atributs
-    private Integer id, nMagatzem, nBotiga;
+    private int id, nMagatzem, nBotiga;
     private String nom;
-    private Double preu, descompte;
+    private double preu, descompte;
 
     public Producte(){
         this.id = -1;
@@ -16,7 +16,7 @@ public class Producte {
         this.preu = 0.00;
         this.descompte = 0.00;
     }
-    public Producte(Integer id, Integer nMagatzem, Integer nBotiga, String nom, Double preu, Double descompte) {
+    public Producte(int id, int nMagatzem, int nBotiga, String nom, double preu, double descompte) {
         this.id = id;
         this.nMagatzem = nMagatzem;
         this.nBotiga = nBotiga;
@@ -25,20 +25,36 @@ public class Producte {
         this.descompte = descompte;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public Integer getnMagatzem() {
+    public int getnMagatzem() {
         return nMagatzem;
     }
 
-    public Integer getnBotiga() {
+    public int getnBotiga() {
         return nBotiga;
     }
 
     public String getNom() {
         return nom;
+    }
+
+    public void restarQuantitat(int n){
+        if(this.nBotiga - n < 0)
+            System.err.println("No disposem de tants productes");
+        else
+            this.nBotiga -= n;
+    }
+
+    public double getPreu(){
+        return this.preu;
+    }
+
+    @Override
+    public String toString() {
+        return id + " - " + nom + " " + preu + "€ Disponibles: " + nBotiga;
     }
 
     @Override
@@ -48,9 +64,8 @@ public class Producte {
 
         Producte producte = (Producte) o;
 
-        if (id != null ? !id.equals(producte.id) : producte.id != null) return false;
-        if (nMagatzem != null ? !nMagatzem.equals(producte.nMagatzem) : producte.nMagatzem != null) return false;
-        if (nBotiga != null ? !nBotiga.equals(producte.nBotiga) : producte.nBotiga != null) return false;
+        if (id != producte.id) return false;
+        if (Double.compare(producte.preu, preu) != 0) return false;
         return nom != null ? nom.equals(producte.nom) : producte.nom == null;
     }
 

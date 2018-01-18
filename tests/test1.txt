@@ -1,0 +1,96 @@
+Client
+Mauro
+Balestra Sastriques
+18/09/1994
+Masculí
+12345678987654321
+41569554K
+25.20
+mbalestra94@gmail.com
+C/Cami ample 35A
+671827123
+*
+Client
+Pepa
+Del Moral
+02/12/1988
+Femení
+12345678987654321
+46532674Q
+92.99
+pepa@correu.com
+C/de las vias 14B
+666333444
+*
+Empleat
+Mireia
+Mas del camp
+46234624Z
+666222111
+01/03/1990
+Femení
+0002
+*
+Empleat
+Marc
+Santos
+47537677P
+999222333
+27/07/1977
+Masculí
+0009
+*
+Producte
+Cerals magics
+123
+4.75
+50
+15
+0.00
+*
+Producte
+Tonyina en llauna
+877
+6.89
+20
+10
+0.00
+*
+Producte
+Pa de pipes
+111
+0.99
+100
+50
+0.00
+*
+Producte
+Patates
+004
+0.85
+2000
+200
+0.00
+*
+Producte
+Bacallà
+032
+5.99
+20
+5
+0.00
+*
+Oferta
+1.20
+20/01/2018
+27/01/2018
+01
+877
+*
+Oferta
+0.75
+15/01/2018
+22/01/2018
+02
+032
+

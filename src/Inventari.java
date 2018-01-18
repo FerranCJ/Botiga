@@ -5,10 +5,10 @@ import java.util.ArrayList;
  */
 public class Inventari {
 
-    private Integer codiProducte;
+    private int codiProducte;
     private String nomProducte;
-    private Integer productesBotiga;
-    private Integer productesMagatzem;
+    private int productesBotiga;
+    private int productesMagatzem;
 
     public Inventari(){
         this.codiProducte = -1;
@@ -19,8 +19,8 @@ public class Inventari {
     }
 
     public void generarInventari(){
-        System.out.println(this.codiProducte + "\t" + this.nomProducte + "\t" +
-        this.productesBotiga + "\t" + this.productesMagatzem);
+        System.out.printf("%-7s %-30s %-20s %-20s\n", this.codiProducte, this.nomProducte,
+        this.productesBotiga,  this.productesMagatzem);
     }
 
     public void afegirProducte(Producte p){

@@ -20,7 +20,26 @@ public class RelacioProductes {
 
     }
 
+    public void restarBotiga(Producte p, int n){
+        int pos = this.productes.indexOf(p);
+        productes.get(pos).restarQuantitat(n);
+    }
     public ArrayList<Producte> obtenirProductes(){
         return this.productes;
+    }
+
+    public Producte buscarProducte(int id){
+        boolean trobat = false;
+        int i = 0;
+        Producte res = new Producte();
+        while(!trobat && i<productes.size()){
+            if(productes.get(i).getId() == id){
+                trobat = true;
+                res = productes.get(i);
+            }
+            i++;
+
+        }
+        return res;
     }
 }
